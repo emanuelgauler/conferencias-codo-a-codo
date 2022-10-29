@@ -1,0 +1,30 @@
+body {
+   background-color: black;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+.logo-img {
+   height: 60px;
+}
+
+.navbar-bg-color {
+   background-color: #34393f !important;
+}
+
+.navbar-link-item { 
+   color: #2e693f !important;
+}
+
+.footer-bg-color {
+   background-image: linear-gradient(to right, #1a3644, #1c5372) !important;
+}
+
+.footer-text-color {
+   color: #d0dfe6 !important;
+}
+
+.footer-text {
+   vertical-align: center !important;
+   text-align: center !important;
+   font-size: 12px !important;
+}
