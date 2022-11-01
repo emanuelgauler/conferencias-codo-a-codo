@@ -3,13 +3,13 @@
 
 <head>
    <meta charset="utf-8" />
-   <meta name=viewport" content="width=device-width, initial-scale=1" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link href="/css/bootstrap.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="/css/confs.css" />
    <title>TP Integrador Frontend - Java Fullstack - Codo a Codo 4.0</title>
 </head>
 
-<body>
+<body class="bg-dark">
    <header>
       <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color px-5">
          <div class="container-fluid px-5">
@@ -17,11 +17,6 @@
                <img class="logo-img" src="images/codoacodo.png" alt="logo" />
                <span class="fs-5">Conf Bs As</span>
             </a>
-            <!--
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    -->
             <ul class="navbar-nav navbar-right">
                <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#confs">La conferencia</a>
@@ -43,12 +38,13 @@
        </nav>
    </header>
    <main class="container-fluid px-0">
-      <div id="confs" class="row border border-1">
-         <div class="col">
-            <img class="img opacity" src="images/hawaii.jpg" alt="hawaii" />
+      <div id="confs" class="container-fluid confs-item">
+         <!--position-absolute end-0 mx-5 top-50-->
+         <div id="fondo" class="row px-0">
+               <img class="img-fluid px-0" src="images/ba1.jpg" alt="BsAsConf">
+            </div>
          </div>
-
-         <div class="container  border border-1 position-absolute end-0 mx-5 top-50"> 
+         <div id="descripcion">
             <div class="row row-cols-1 justify-content-end pe-1">
                <h2 class="col-3 text-end text-light">Conf Bs As</h2>
             </div>
@@ -60,8 +56,8 @@
                </p>
             </div>
             <div class="row justify-content-end">
-               <button class="col-2 btn btn-outline-light mx-1">Quiero ser orador</button>
-               <button class="col-2 btn btn-success mx-1">Comprar tickets</button>
+               <a class="col-2 btn btn-outline-light mx-1" href="#inscripcion">Quiero ser orador</a>
+               <a class="col-2 btn btn-success mx-1" href="/buy-tickets.html">Comprar tickets</a>
             </div>
          </div>
       </div>
@@ -136,7 +132,7 @@
       </div>
 
       <div id="inscripcion" class="row bg-light">
-         <div class="container-fluid border border-1 border-danger w-50">
+         <div class="container-fluid w-50">
             <div class="row text-center">
                <p>CONVIÉRTETE EN UN</p>
                <h3>ORADOR</h3>
@@ -144,20 +140,20 @@
                   Anótate como orador para dar una <abbr title="">charla ignite</abbr>. Cuéntanos de que quieres hablar.
                </p>
             </div>
-            <div class="row g-4 justify-content-center">
-               <div class="col">
+            <div class="row gy-4 justify-content-center">
+               <div class="col-6">
                   <input type="text" placeholder="Nombre" class="form-control" />
                </div>
-               <div class="col">
+               <div class="col-6">
                   <input type="text" placeholder="Apellido" class="form-control" />
                </div>
+               <div class="col-12">
+                  <textarea name="tema" id="tema" class="form-control" cols="67" rows="4" placeholder="¿Sobré que quieres hablar?"></textarea>
+                  <small class="col" style="font-size: 10px;">Recuerda incluir un título para tu charla</small>
+               </div>
             </div>
-            <div class="row"><div class="col">
-               input:
-            </div></div>
-            <div class="row"><small class="col">Recuerda incluir un título para tu charla</small></div>
             <div class="row">
-               <strong class="col text-light text-center rounded p-2 my-2" style="background-color: #96c93e;">
+               <strong class="col text-light text-center rounded-1 p-2 my-2" style="background-color: #96c93e;">
                   Enviar
                </strong>
             </div>
