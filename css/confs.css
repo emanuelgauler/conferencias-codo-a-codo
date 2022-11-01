@@ -28,3 +28,9 @@ body {
    text-align: center !important;
    font-size: 12px !important;
 }
+
+.desc-confs {
+   position: absolute;
+   top: 0px;
+   right: 0px;
+}

@@ -24,27 +24,144 @@
                     -->
             <ul class="navbar-nav navbar-right">
                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                  <a class="nav-link active" aria-current="page" href="#confs">La conferencia</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Los oradores</a>
+                  <a class="nav-link" href="#oradores">Los oradores</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                  <a class="nav-link" href="#lugar">El lugar y la fecha</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Conviérte en orador</a>
+                  <a class="nav-link" href="#inscripcion">Conviérte en orador</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link nav-link-s navbar-link-item" href="#">Comprar tickets</a>
+                  <a class="nav-link nav-link-s navbar-link-item" href="buy-tickets.html">Comprar tickets</a>
                </li>
             </ul>
          </div>
        </nav>
    </header>
-   <main class="container-fluid">
-      <div class="container">
-         
+   <main class="container-fluid px-0">
+      <div id="confs" class="row border border-1">
+         <div class="col">
+            <img class="img opacity" src="images/hawaii.jpg" alt="hawaii" />
+         </div>
+
+         <div class="container  border border-1 position-absolute end-0 mx-5 top-50"> 
+            <div class="row row-cols-1 justify-content-end pe-1">
+               <h2 class="col-3 text-end text-light">Conf Bs As</h2>
+            </div>
+            <div class="row row-cols-1 justify-content-end">
+               <p class="col-6 text-end text-light">
+                  Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y
+                  experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a
+                  otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+               </p>
+            </div>
+            <div class="row justify-content-end">
+               <button class="col-2 btn btn-outline-light mx-1">Quiero ser orador</button>
+               <button class="col-2 btn btn-success mx-1">Comprar tickets</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="oradores" class="row row-cols-1 bg-light">
+         <div class="col">
+            <p class="text-center">CONOCE A LOS</p>
+            <h3 class="text-center">ORADORES</h3>
+         </div>
+
+         <div class="col px-5">
+            <div class="row mx-5 pb-4">
+               <div class="col-4">
+                  <div class="card">
+                     <img src="/images/steve.jpg" alt="steve" class="img-card-top" />
+                     <div class="card-body">
+                        <strong class="card-subtitle bg-warning px-2 rounded">Javascript</strong>
+                        <strong class="card-subtitle bg-info text-light px-2 rounded">React</strong>
+                        <h4 class="card-title">Steve Jobs</h4>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde commodi, recusandae quo nisi quia exercitationem repellendus inventore, laboriosam incidunt, saepe doloribus dolore. Vero perferendis, natus numquam tenetur eum cum distinctio.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4">
+                  <div class="card">
+                     <img src="/images/bill.jpg" alt="bill" class="img-card-top" />
+                     <div class="card-body">
+                        <strong class="card-subtitle bg-warning px-2 rounded">Javascript</strong>
+                        <strong class="card-subtitle bg-info text-light px-2 rounded">React</strong>
+                        <h4 class="card-title">Bill Gates</h4>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde commodi, recusandae quo nisi quia exercitationem repellendus inventore, laboriosam incidunt, saepe doloribus dolore. Vero perferendis, natus numquam tenetur eum cum distinctio.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4">
+                  <div class="card">
+                     <img src="/images/ada.jpeg" alt="ada" class="img-card-top" />
+                     <div class="card-body">
+                        <strong class="card-subtitle bg-secondary rounded px-2 text-light">Negocios</strong>
+                        <strong class="card-subtitle bg-danger rounded px-2 text-light">Startups</strong>
+                        <h4 class="card-title">Ada Lovelace</h4>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde commodi, recusandae quo nisi quia exercitationem repellendus inventore, laboriosam incidunt, saepe doloribus dolore. Vero perferendis, natus numquam tenetur eum cum distinctio.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="lugar" class="row px-0">
+         <div class="col card px-0 mx-0">
+            <div class="row g-0 ">
+               <div class="col border-top border-2 border-bottom border-2 ms-0">
+                  <img src="/images/honolulu.jpg" alt="honolulu" class="img-fluid">
+               </div>
+               <div class="col text-light border-top border-2 border-bottom border-2 border-start border-1" style="background-color: #34393f;">
+                  <div class="card-body">
+                     <h4 class="card-title">Bs As Octubre</h4>
+                     <p class="card-text" style="font-size: 12px;">
+                        Buenos Aires es la provincia y localidad más grande del estado de Argentina, en
+                        los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades
+                        estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la
+                        costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado
+                        una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km²
+                        de superficie).
+                     </p>
+                     <a href="#" class="btn btn-outline-light">Conocé más</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="inscripcion" class="row bg-light">
+         <div class="container-fluid border border-1 border-danger w-50">
+            <div class="row text-center">
+               <p>CONVIÉRTETE EN UN</p>
+               <h3>ORADOR</h3>
+               <p>
+                  Anótate como orador para dar una <abbr title="">charla ignite</abbr>. Cuéntanos de que quieres hablar.
+               </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <div class="col">
+                  <input type="text" placeholder="Nombre" class="form-control" />
+               </div>
+               <div class="col">
+                  <input type="text" placeholder="Apellido" class="form-control" />
+               </div>
+            </div>
+            <div class="row"><div class="col">
+               input:
+            </div></div>
+            <div class="row"><small class="col">Recuerda incluir un título para tu charla</small></div>
+            <div class="row">
+               <strong class="col text-light text-center rounded p-2 my-2" style="background-color: #96c93e;">
+                  Enviar
+               </strong>
+            </div>
+         </div>
       </div>
    </main>
    <footer class="container-fluid text-center footer-bg-color align-items-end">
