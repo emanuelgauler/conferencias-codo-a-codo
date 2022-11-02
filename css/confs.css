@@ -55,3 +55,7 @@ body {
    top: 500px;
    right: 70px;
 }
+
+.tickets-button:hover {
+   cursor: pointer;
+}

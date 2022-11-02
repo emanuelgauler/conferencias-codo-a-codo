@@ -80,24 +80,24 @@
          </div>
          <div class="col-6">
             <label for="quantity_in" class="form-label">Cantidad</label>
-            <input type="number" class="form-control" placeholder="cantidad" />
+            <input type="number" class="form-control" placeholder="cantidad" id="quantity_in"/>
          </div>
          <div class="col-6">
             <label for="category_in" class="form-label">Categoria</label>
             <select class="form-select" placeholder="cantidad" name="category_in" id="category_in">
                <option selected>Elegir</option>
-               <option value="20">Estudiante</option>
-               <option value="50">Trainee</option>
-               <option value="85">Junior</option>
+               <option value="0.2">Estudiante</option>
+               <option value="0.50">Trainee</option>
+               <option value="0.85">Junior</option>
             </select>
          </div>
          <div class="row py-3 my-3 mt-4 rounded-1" style="background-color: #cce5ff;">
             <span class="col-3 text-end" style="color: #3477c3;">Total a Pagar: $</span>
-            <strong class="col-9 text-start" style="color: #3477c3;">1234,56</strong>
+            <strong id="result" class="col-9 text-start" style="color: #3477c3;"></strong>
          </div>
          <div class="row justify-content-around my-3 border">
-            <div class="col-5 text-center rounded-1 py-2" style="background-color: #96c93e;">Borrar</div>
-            <button class="col-5 text-center rounded-1 py-2" style="background-color: #96c93e;" onclick="">Resumen</button>
+            <div id="clear_button" class="col-5 text-center rounded-1 py-2 tickets-button" style="background-color: #96c93e;">Borrar</div>
+            <div id="resume_button" class="col-5 text-center rounded-1 py-2 tickets-button" style="background-color: #96c93e;">Resumen</div>
          </div>
       </div>
    </main>
@@ -115,4 +115,5 @@
    </footer>
 </body>
 
+<script src="/js/buy-tickets.js"></script>
 </html>
