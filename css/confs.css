@@ -13,6 +13,9 @@ body {
 .navbar-bg-color {
    background-color: #34393f !important;
 }
+.bg-buttons {
+   background-color: #96c93e !important;
+}
 
 .navbar-link-item { 
    color: #2e693f !important;

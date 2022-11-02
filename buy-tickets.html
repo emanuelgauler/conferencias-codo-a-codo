@@ -9,7 +9,7 @@
    <title>Comprando Tickets</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-light">
    <header>
       <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color px-5">
          <div class="container-fluid px-5">
@@ -37,8 +37,69 @@
          </div>
       </nav>
    </header>
-   <main>
-
+   <main class="container bg-light">
+      <div class="row text-center mx-auto w-75 px-5">
+         <div class="col border border-2 border-info mt-4 mx-1 pt-3">
+            <h4>Estudiante</h4>
+            <div>
+               <p>Tiene un descuento</p>
+               <p><strong>80%</strong></p>
+               <p>* presentar documentación</p>
+            </div>
+         </div>
+         <div class="col border border-2 border-info mt-4 mx-1 pt-3">
+            <h4>Trainee</h4>
+            <div>
+               <p>Tiene un descuento</p>
+               <p><strong>50%</strong></p>
+               <p>* presentar documentación</p>
+            </div>
+         </div>
+         <div class="col border border-2 border-warning mt-4 mx-1 pt-3">
+            <h4>Junior</h4>
+            <div>
+               <p>Tiene un descuento</p>
+               <p><strong>15%</strong></p>
+               <p>* presentar documentación</p>
+            </div>
+         </div>
+      </div>
+      <div class="row text-center mx-auto mb-3">
+         <p>VENTA</p>
+         <h2>VALOR DE TICKET $200</h2>
+      </div>
+      <div class="row justify-content-center border mx-auto w-75 gy-4">
+         <div class="col-6">
+            <input type="text" placeholder="Nombre" class="form-control" />
+         </div>
+         <div class="col-6">
+            <input type="text" placeholder="Apellido" class="form-control"/>
+         </div>
+         <div class="col-12">
+            <input type="email" placeholder="Correo" class="form-control"/>
+         </div>
+         <div class="col-6">
+            <label for="quantity_in" class="form-label">Cantidad</label>
+            <input type="number" class="form-control" placeholder="cantidad" />
+         </div>
+         <div class="col-6">
+            <label for="category_in" class="form-label">Categoria</label>
+            <select class="form-select" placeholder="cantidad" name="category_in" id="category_in">
+               <option selected>Elegir</option>
+               <option value="20">Estudiante</option>
+               <option value="50">Trainee</option>
+               <option value="85">Junior</option>
+            </select>
+         </div>
+         <div class="row py-3 my-3 mt-4 rounded-1" style="background-color: #cce5ff;">
+            <span class="col-3 text-end" style="color: #3477c3;">Total a Pagar: $</span>
+            <strong class="col-9 text-start" style="color: #3477c3;">1234,56</strong>
+         </div>
+         <div class="row justify-content-around my-3 border">
+            <div class="col-5 text-center rounded-1 py-2" style="background-color: #96c93e;">Borrar</div>
+            <button class="col-5 text-center rounded-1 py-2" style="background-color: #96c93e;" onclick="">Resumen</button>
+         </div>
+      </div>
    </main>
 
    <footer class="container-fluid text-center footer-bg-color align-items-end">
